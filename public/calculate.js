@@ -9,20 +9,20 @@ var sum
 function percentageUpdate() {
   if(document.getElementById("A1Grade1").value !== "" && document.getElementById("A1Grade2").value !=="" ){
     a1Grade = parseInt(document.getElementById("A1Grade1").value) / parseInt(document.getElementById("A1Grade2").value) * 100;
-    document.getElementById('A1Percentage').innerHTML = a1Grade+"%";
+    document.getElementById('A1Percentage').innerHTML = a1Grade.toFixed(2)+"%";
     };
   if(document.getElementById("A2Grade1").value !== "" && document.getElementById("A2Grade2").value !=="" ){
      a2Grade = parseInt(document.getElementById("A2Grade1").value) / parseInt(document.getElementById("A2Grade2").value) * 100;
-    document.getElementById('A2Percentage').innerHTML = a2Grade+"%";
+    document.getElementById('A2Percentage').innerHTML = a2Grade.toFixed(2)+"%";
     };
   if(document.getElementById("A3Grade1").value !== "" && document.getElementById("A3Grade2").value !=="" ){
      a3Grade = parseInt(document.getElementById("A3Grade1").value) / parseInt(document.getElementById("A3Grade2").value) * 100;
-    document.getElementById('A3Percentage').innerHTML = a3Grade+"%";
+    document.getElementById('A3Percentage').innerHTML = a3Grade.toFixed(2)+"%";
     };
 
 if(document.getElementById("A4Grade1").value !== "" && document.getElementById("A4Grade2").value !=="" ){
   a4Grade = parseInt(document.getElementById("A4Grade1").value) / parseInt(document.getElementById("A4Grade2").value) * 100;
-  document.getElementById('A4Percentage').innerHTML = a4Grade+"%";
+  document.getElementById('A4Percentage').innerHTML = a4Grade.toFixed(2)+"%";
   };
 };
 setInterval(percentageUpdate(), 1000);
@@ -64,7 +64,7 @@ function average() {
  };
  if(sum1!==0 && sum2!==0){
    var average = sum1 / sum2 *100;
-   document.getElementById('final').innerHTML = average+"%";
+   document.getElementById('final').innerHTML = average.toFixed(2)+"%";
 
 
  };
@@ -92,6 +92,22 @@ function mean(){
  };
  if(numOfGrades !==0){
  var mean = sum / numOfGrades;
- document.getElementById('final').innerHTML = mean+"%";
+ document.getElementById('final').innerHTML = mean.toFixed(2)+"%";
  };
+};
+
+function refresh(){
+  document.getElementById('A1Grade1').value ='';
+  document.getElementById('A1Grade2').value ='';
+  document.getElementById('A1Percentage').innerHTML ='';
+  document.getElementById('A2Grade1').value ='';
+  document.getElementById('A2Grade2').value ='';
+  document.getElementById('A2Percentage').innerHTML ='';
+  document.getElementById('A3Grade1').value ='';
+  document.getElementById('A3Grade2').value ='';
+  document.getElementById('A3Percentage').innerHTML ='';
+  document.getElementById('A4Grade1').value ='';
+  document.getElementById('A4Grade2').value ='';
+  document.getElementById('A4Percentage').innerHTML ='';
+  document.getElementById("final").innerHTML = '';
 };

@@ -27,6 +27,13 @@ h3{
   padding-right:1em;
 }
 
+img{
+  float:right;
+  height:5em;
+
+  margin-right: 1em;
+}
+
 
 th {
   font-weight: bold;
