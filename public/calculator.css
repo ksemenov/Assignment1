@@ -42,6 +42,11 @@ th {
   text-align: left;
   padding-left: 0.5em;
 }
+
+input {
+  height: 2em;
+  width: 7em;
+}
 tbody tr{
   height:3em;
   text-indent: 0.5em;
