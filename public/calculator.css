@@ -5,7 +5,7 @@ body {
 h1{
   margin-left: 1em;
   margin-top: 2em;
-  font-family: Calibri;
+  font-family: Arial;
 
 }
 h3{
@@ -16,6 +16,7 @@ h3{
   height:50em;
   background-color: white;
   margin: auto;
+  padding-top:0.5em;
 }
 #divTwo {
   background-color: #E7EFF0;
@@ -23,6 +24,7 @@ h3{
   height:40em;
   margin-left: 2em;
   padding-left: 1em;
+  padding-right:1em;
 }
 
 
@@ -43,7 +45,7 @@ tbody tr{
 }
 table {
     border-collapse: collapse;
-    width: 79em;
+    width: 80em;
 }
 
 table, td, th {
@@ -72,12 +74,16 @@ table, td, th {
   text-align: center;
   color:white;
 }
-.buttons{
+#buttons{
   background-color: #B30D12;
   color: white;
-  height: 2em;
-  width: 6em;
-  border-radius: 5%;
+  height: 3em;
+  width: 7em;
+  border-radius: 15%;
   border:em solid #B30D12;
   text-align: center;
+}
+#buttonz {
+  float: right;
+  margin-top: 10em;
 }

@@ -26,31 +26,31 @@
               <td>Activity 1</td>
               <td>A1</td>
               <td>
-                <input id = "numb"> / <input id = "numb">
+                <input id = "A1Grade1" onchange="percentageUpdate()"> / <input id = "A1Grade2" onchange="percentageUpdate()">
               </td>
-              <td></td>
+              <td id="A1Percentage"></td>
             </tr>
             <tr>
               <td>Activity 2</td>
               <td>A2</td>
               <td>
-                <input id = "numb"> / <input id = "numb">
+                <input id = "A2Grade1" onchange="percentageUpdate()"> / <input id = "A2Grade2" onchange="percentageUpdate()">
               </td>
-              <td></td>
+              <td id="A2Percentage"></td>
             </tr>
             <tr>
               <td>Activity 3</td>
               <td>A3</td>
               <td>
-                <input id = "numb"> / <input id = "numb">
+                <input id = "A3Grade1" onchange="percentageUpdate()"> / <input id = "A3Grade2" onchange="percentageUpdate()">
               </td>
-              <td></td>
+              <td id="A3Percentage"></td>
             </tr>
             <tr>
               <td>Activity 4</td>
               <td>A4</td>
               <td>
-                <input id = "A4Grade1"> / <input id = "A4Grade2">
+                <input id = "A4Grade1" onchange="percentageUpdate()"> / <input id = "A4Grade2" onchange="percentageUpdate()">
               </td>
               <td id="A4Percentage"></td>
             </tr>
@@ -58,13 +58,13 @@
               <td id = "total">TOTAL</td>
               <td></td>
               <td></td>
-              <td></td>
+              <td id="final"></td>
             </tr>
           </tbody>
         </table>
         <div id ="buttonz">
-        <button type="button" class = "buttons">AVERAGE</button>
-        <button type="button" class = "buttons">MEAN</button>
+        <button type="button" id = "buttons" onclick="average()">AVERAGE</button>
+        <button type="button" id = "buttons" onclick= "mean()">MEAN</button>
       </div>
       </div>
 
